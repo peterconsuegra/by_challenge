@@ -5,26 +5,21 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+- Ruby version:
+	- 3.0.2
 
-- 3.0.2
+- Configuration
+	- bundle install
 
-* Configuration
+- Database creation
+	- rake db:create db:migrate
 
-- bundle install
+- How to run the test suite
+	- bundle exec rake db:test:prepare
+	-bundle exec rspec spec/requests/orders_request_spec.rb
 
-* Database creation
-
-- rake db:create db:migrate
-
-* How to run the test suite
-
-1. bundle exec rake db:test:prepare
-2. bundle exec rspec spec/requests/orders_request_spec.rb
-
-* How to run the rails app
-
-- bundle exec rails s
+- How to run the rails app
+	- bundle exec rails s
 
 ## Notes...
 
