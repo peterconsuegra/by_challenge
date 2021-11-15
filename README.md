@@ -7,15 +7,15 @@ Things you may want to cover:
 
 * Ruby version
 
-3.0.2
+1. 3.0.2
 
 * Configuration
 
-bundle install
+1. bundle install
 
 * Database creation
 
-rake db:create db:migrate
+1. rake db:create db:migrate
 
 * How to run the test suite
 
@@ -26,15 +26,15 @@ rake db:create db:migrate
 
 1. bundle exec rails s
 
-* Notes...
+## Notes...
 
-* Postman set
+### Postman set
 
-Body -> form-data
-Key: order[line_items_attributes][]
-Value {quantity:2, amount:10}
+Body -> form-data \
+Key: order[line_items_attributes][] \
+Value {quantity:2, amount:10} \
 
-* Order controller logic 
+### Order controller logic 
 
 data = {order: { line_items_attributes: [{ quantity: 2, amount: 10 }, { quantity: 3, amount: 10 }] }}
 
@@ -46,9 +46,8 @@ order = Order.create!(permitted_params)
 
 order = Order.update!(permitted_params)
 
-* REGEX
-
-REGEX 
+### REGEX
+ 
 v1
 regexp =/\{\s*quantity:.*,\s*amount:.*}/
 regexp.match?("{quantity:2, amount:10}")
