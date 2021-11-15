@@ -19,12 +19,12 @@ rake db:create db:migrate
 
 * How to run the test suite
 
-bundle exec rake db:test:prepare
-bundle exec rspec spec/requests/orders_request_spec.rb
+1. bundle exec rake db:test:prepare
+2. bundle exec rspec spec/requests/orders_request_spec.rb
 
 * How to run the rails app
 
-bundle exec rails s
+1. bundle exec rails s
 
 * Notes...
 
