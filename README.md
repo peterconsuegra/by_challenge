@@ -7,15 +7,15 @@ Things you may want to cover:
 
 * Ruby version
 
-1. 3.0.2
+- 3.0.2
 
 * Configuration
 
-1. bundle install
+- bundle install
 
 * Database creation
 
-1. rake db:create db:migrate
+- rake db:create db:migrate
 
 * How to run the test suite
 
@@ -24,7 +24,7 @@ Things you may want to cover:
 
 * How to run the rails app
 
-1. bundle exec rails s
+- bundle exec rails s
 
 ## Notes...
 
