@@ -16,7 +16,7 @@ Things you may want to cover:
 
 - How to run the test suite
 	- bundle exec rake db:test:prepare
-	-bundle exec rspec spec/requests/orders_request_spec.rb
+	- bundle exec rspec spec/requests/orders_request_spec.rb
 
 - How to run the rails app
 	- bundle exec rails s
@@ -27,7 +27,7 @@ Things you may want to cover:
 
 Body -> form-data \
 Key: order[line_items_attributes][] \
-Value {quantity:2, amount:10} \
+Value {quantity:2, amount:10} 
 
 ### Order controller logic 
 
@@ -42,12 +42,8 @@ order = Order.create!(permitted_params)
 order = Order.update!(permitted_params)
 
 ### REGEX
- 
-v1
-regexp =/\{\s*quantity:.*,\s*amount:.*}/
-regexp.match?("{quantity:2, amount:10}")
 
-v2
-regexp = /\{\s*quantity:\s*[0-9]+\s*,\s*amount:\s*[0-9]+\s*}/
-regexp.match?("{quantity:2, amount:10}")
+- Security check:
+	- regexp = /\{\s*quantity:\s*[0-9]+\s*,\s*amount:\s*[0-9]+\s*}/
+	-regexp.match?("{quantity:2, amount:10}")
 
