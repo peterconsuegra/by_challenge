@@ -23,13 +23,13 @@ Things you may want to cover:
 
 ## Notes...
 
-### Postman set
+### Postman set:
 
 Body -> form-data \
 Key: order[line_items_attributes][] \
 Value {quantity:2, amount:10} 
 
-### Order controller logic 
+### Order controller params logic:
 
 data = {order: { line_items_attributes: [{ quantity: 2, amount: 10 }, { quantity: 3, amount: 10 }] }}
 
@@ -41,9 +41,9 @@ order = Order.create!(permitted_params)
 
 order = Order.update!(permitted_params)
 
-### REGEX
+### REGEX Security check:
 
-- Security check:
-	- regexp = /\{\s*quantity:\s*[0-9]+\s*,\s*amount:\s*[0-9]+\s*}/
-	-regexp.match?("{quantity:2, amount:10}")
+regexp = /\{\s*quantity:\s*[0-9]+\s*,\s*amount:\s*[0-9]+\s*}/
+
+regexp.match?("{quantity:2, amount:10}")
 
