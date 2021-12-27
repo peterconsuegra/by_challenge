@@ -1,5 +1,5 @@
 # README
-A modern Rails 6 API example
+A MODERN RAILS 6 API EXAMPLE WITH RSPEC TESTING
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
